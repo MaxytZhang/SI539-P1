@@ -73,7 +73,7 @@ small{
     .navbar-nav{
         text-align: center;
         position: relative;
-        right: 5px;
+        right: 10px;
     }
 
     button{
@@ -81,6 +81,7 @@ small{
         height: 50px;
         outline: none;
         background-color: transparent;
+        justify-content: center;
     }
 
     button img{
