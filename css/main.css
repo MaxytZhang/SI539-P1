@@ -51,7 +51,10 @@ small{
     .fixed-top button{
         position: absolute;
         right: 10px;
-        top: 10px
+        top: 10px;
+        outline: none;
+        background-color: transparent;
+
     }
 
     .icon-bar{
@@ -73,15 +76,7 @@ small{
     .navbar-nav{
         text-align: center;
         position: relative;
-        right: 10px;
-    }
-
-    button{
-        width: 50px;
-        height: 50px;
-        outline: none;
-        background-color: transparent;
-        justify-content: center;
+        right: 8px;
     }
 
     button img{
