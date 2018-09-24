@@ -1,0 +1,148 @@
+html{
+    background: white;
+}
+
+p{
+    color: #666666;
+    list-style-type: none;
+    font-size: 0.9em;
+    overflow-wrap: break-word;
+    line-height: 1.6em;
+}
+
+h2{
+    color: white;
+}
+
+small{
+    color: white;
+}
+
+
+.banner{
+    background-color: white;
+    opacity: 50%;
+}
+
+/*#navbarNav{*/
+    /*position: relative;*/
+    /*top: 20px;*/
+/*}*/
+
+.navbar{
+    padding: 2%;
+    background-color: white;
+}
+
+.navbar-toggle {
+    border: none;
+    padding-top: 10px;
+}
+
+@media (min-width: 575.98px){
+    .fixed-top button{
+        visibility: collapse;
+        position: absolute;
+        top: 20px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fixed-top button{
+        position: absolute;
+        right: 10px;
+        top: 10px
+    }
+
+    .icon-bar{
+        padding: 5px;
+        background: #bdc3c7;
+        border-color: transparent;
+    }
+
+    .banner li a{
+        padding: 0;
+        display: block;
+    }
+
+    .banner li{
+        position: relative;
+        right: 20px;
+    }
+
+    .navbar-nav{
+        text-align: center;
+    }
+
+    button{
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+    }
+
+    button img{
+        width: 100%;
+        height: 100%;
+    }
+
+}
+
+
+.navbar-brand img{
+    width: 40%;
+    height: 40%;
+}
+
+.banner li{
+    position: relative;
+}
+
+.banner li a{
+    padding: 10px 20px 10px 20px;
+    color: rgb(153, 153, 153);
+    font-family: "Fira Code";
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    transition: all 0.4s ease-in-out;
+    left: 20px;
+    position: relative;
+}
+
+#navbarNav a:hover, .banner li{
+    color: white;
+}
+
+#navbarNav a:hover, .banner li .active > a {
+    background-color: black;
+}
+
+.nav-row{
+    height: 120px;
+}
+
+.portfolio-item{
+    position: relative;
+
+}
+
+.portfolio-intro{
+    border-radius: 5px;
+    background-color: black;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+    width: 100%;
+    height: 100%;
+}
+
+#portfolio a:hover .portfolio-intro{
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+
+.portfolio-info{
+    margin: 5% 0 0 5%;
+}
