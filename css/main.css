@@ -39,8 +39,8 @@ small{
     padding-top: 10px;
 }
 
-@media (min-width: 575.98px){
-    .fixed-top button{
+@media (min-width: 575.98px) {
+    .fixed-top button {
         visibility: collapse;
         position: absolute;
         top: 20px;
@@ -84,16 +84,16 @@ small{
         height: 100%;
     }
 
+    button i{
+        color: rgb(153, 153, 153);
+    }
+
 }
 
 
 .navbar-brand img{
     width: 40%;
     height: 40%;
-}
-
-.banner li{
-    position: relative;
 }
 
 .banner li a{
@@ -117,7 +117,7 @@ small{
 }
 
 .nav-row{
-    height: 120px;
+    height: 90px;
 }
 
 .portfolio-item{
