@@ -10,11 +10,33 @@ p{
     line-height: 1.6em;
 }
 
-h2{
-    color: white;
+h1,h2,h3,h4,small,strong{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Fira Code";
+    letter-spacing: 1px;
+}
+
+#info h1{
+    font-size: 30px;
+    color: rgb(100,100,100);
+}
+
+#info h2{
+    font-size: 20px;
+    color: rgb(125,125,125);
+}
+
+#info h3{
+    font-size: 15px;
+    color: rgb(150,150,150);
 }
 
 small{
+    color: black;
+}
+
+#portfolio h2{
     color: white;
 }
 
@@ -23,11 +45,6 @@ small{
     background-color: white;
     opacity: 50%;
 }
-
-/*#navbarNav{*/
-    /*position: relative;*/
-    /*top: 20px;*/
-/*}*/
 
 .navbar{
     padding: 2%;
