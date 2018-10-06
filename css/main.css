@@ -25,7 +25,10 @@ h1,h2,h3,h4,small,strong{
     font-size: 30px;
     color: rgb(100,100,100);
     margin-top: 0;
+
 }
+
+
 
 #info h2{
     font-size: 20px;
@@ -35,7 +38,22 @@ h1,h2,h3,h4,small,strong{
 #info h3{
     font-size: 15px;
     color: rgb(150,150,150);
+    font-family: 'Lobster', cursive;
+    /*background-image: -webkit-linear-gradient(left,#D81159, #E53A40 10%, #FFBC42 20%, #75D701 30%, #30A9DE 40%,#D81159 50%, #E53A40 60%, #FFBC42 70%, #75D701 80%, #30A9DE 90%,#D81159);*/
+    /*color:transparent;*/
+    /*-webkit-background-clip: text;*/
+    /*background-size: 200% 100%;*/
+    /*animation: flowlight 5s linear infinite;*/
 }
+
+/*@keyframes flowlight {*/
+    /*0% {*/
+        /*background-position: 0 0;*/
+    /*}*/
+    /*100% {*/
+        /*background-position: -100% 0;*/
+    /*}*/
+/*}*/
 
 small{
     color: black;
@@ -120,6 +138,12 @@ small{
 .nav-row{
     height: 90px;
 }
+
+
+#info{
+    height: 800px;
+}
+
 
 .portfolio-item{
     position: relative;
@@ -274,4 +298,33 @@ small{
     .sidebar{
         visibility: collapse;
     }
+}
+
+.img-wrap{
+    display: flex;
+    flex-flow: row;
+}
+
+.img-offset{
+    flex: 1;
+}
+
+.img-content{
+    flex: 3;
+    width: 60%;
+    justify-content: right;
+}
+
+.img-content img{
+    width: 100%;
+}
+
+.img-content h1{
+    background: url("../img/background.jpg") no-repeat;
+}
+
+iframe{
+    width: 900px;
+    height: 800px;
+    border: honeydew;
 }
