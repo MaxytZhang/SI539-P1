@@ -366,12 +366,12 @@ iframe {
 }
 
 @media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
-    .img-wrap p{
-        font-size: 3vw;
-        font-weight: 500;
-        line-height: 1.2;
-        font-family: "Courier New", Courier, monospace;
-        margin-top: 20px;
+    .img-offset-2{
+        background-image: none;
+        flex: 0.1;
+    }
+    .img-offset{
+        flex: 0.9;
     }
 }
 
