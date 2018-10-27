@@ -318,7 +318,7 @@ iframe {
 }
 
 .img-offset{
-    flex: 1;
+    flex: 0.5;
 }
 
 .img-content{
@@ -331,6 +331,19 @@ iframe {
     width: 100%;
 }
 
+.img-offset-2{
+    flex: 0.5;
+    background-image: url("../img/background.jpg");
+}
+
+.img-wrap p{
+    font-size: 3vw;
+    font-weight: 500;
+    line-height: 1.2;
+    font-family: "Courier New", Courier, monospace;
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 575.98px) and (orientation:portrait)  {
     .img-offset{
         flex: 0.5;
@@ -341,9 +354,13 @@ iframe {
         text-orientation: upright;
         font-family: "Courier New", Courier, monospace;
     }
+
+    .img-offset-2{
+        flex: 0;
+    }
 }
 
-@media screen and (min-width: 575.98px) {
+@media screen and (min-width: 575.98px) and (max-width: 1199.98) {
     .img-wrap p{
         font-size: 3vw;
         font-weight: 500;
@@ -357,5 +374,8 @@ iframe {
     /* Style adjustments for landscape mode goes here */
     .img-offset{
         flex: 0.75;
+    }
+    .img-offset-2{
+        flex: 0.25;
     }
 }
