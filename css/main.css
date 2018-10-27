@@ -1,8 +1,8 @@
-html{
+html {
     background: white;
 }
 
-p{
+p {
     color: #666666;
     list-style-type: none;
     font-size: 0.9em;
@@ -10,34 +10,32 @@ p{
     line-height: 1.6em;
 }
 
-section{
+section {
     margin: 20px 0;
 }
 
-h1,h2,h3,h4,small,strong{
+h1, h2, h3, h4, small, strong {
     margin-top: 15px;
     margin-bottom: 15px;
     font-family: "Courier New", Courier, monospace;
     letter-spacing: 1px;
 }
 
-#info h1{
+#info h1 {
     font-size: 30px;
-    color: rgb(100,100,100);
+    color: rgb(100, 100, 100);
     margin-top: 0;
 
 }
 
-
-
-#info h2{
+#info h2 {
     font-size: 20px;
-    color: rgb(125,125,125);
+    color: rgb(125, 125, 125);
 }
 
-#info h3{
+#info h3 {
     font-size: 15px;
-    color: rgb(150,150,150);
+    color: rgb(150, 150, 150);
     font-family: 'Lobster', cursive;
     /*background-image: -webkit-linear-gradient(left,#D81159, #E53A40 10%, #FFBC42 20%, #75D701 30%, #30A9DE 40%,#D81159 50%, #E53A40 60%, #FFBC42 70%, #75D701 80%, #30A9DE 90%,#D81159);*/
     /*color:transparent;*/
@@ -47,29 +45,28 @@ h1,h2,h3,h4,small,strong{
 }
 
 /*@keyframes flowlight {*/
-    /*0% {*/
-        /*background-position: 0 0;*/
-    /*}*/
-    /*100% {*/
-        /*background-position: -100% 0;*/
-    /*}*/
+/*0% {*/
+/*background-position: 0 0;*/
+/*}*/
+/*100% {*/
+/*background-position: -100% 0;*/
+/*}*/
 /*}*/
 
-small{
+small {
     color: black;
 }
 
-#portfolio h2{
+#portfolio h2 {
     color: white;
 }
 
-
-.banner{
+.banner {
     background-color: white;
     opacity: 50%;
 }
 
-.navbar{
+.navbar {
     padding: 2% 0 0 0;
     background-color: white;
 }
@@ -79,22 +76,20 @@ small{
     padding-top: 10px;
 }
 
-.sidebar{
+.sidebar {
     padding: 0;
     margin-top: 120px;
     /* margin-right: 20px; */
     right: 80px;
 }
 
-.sidebar li{
+.sidebar li {
     /*margin-bottom: 30px;*/
 }
 
-
-.sidebar li a{
-
+.sidebar li a {
     color: rgb(153, 153, 153);
-    font-family:  "Courier New", Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 15px;
     letter-spacing: 0;
     text-decoration: none;
@@ -102,7 +97,7 @@ small{
     display: block;
 }
 
-.sidebar a:hover, .sidebar li{
+.sidebar a:hover, .sidebar li {
     color: white;
 }
 
@@ -110,15 +105,15 @@ small{
     background-color: black;
 }
 
-.navbar-brand img{
+.navbar-brand img {
     width: 40%;
     height: auto;
 }
 
-.banner li a{
+.banner li a {
     padding: 10px 20px;
     color: rgb(153, 153, 153);
-    font-family:  "Courier New", Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     font-size: 20px;
     letter-spacing: 2px;
     text-decoration: none;
@@ -127,7 +122,7 @@ small{
     position: relative;
 }
 
-#navbarNav a:hover, .banner li{
+#navbarNav a:hover, .banner li {
     color: white;
 }
 
@@ -135,22 +130,28 @@ small{
     background-color: black;
 }
 
-.nav-row{
+.nav-row {
     height: 90px;
 }
 
-
-#info{
-    height: 800px;
+#info {
+    height: 600px;
 }
 
+#down .row{
+    margin: 50px 0;
+}
 
-.portfolio-item{
+#down i{
+    color: rgb(180, 180, 180);
+}
+
+.portfolio-item {
     position: relative;
 
 }
 
-.portfolio-intro{
+.portfolio-intro {
     border-radius: 5px;
     background-color: black;
     position: absolute;
@@ -162,17 +163,22 @@ small{
     height: 100%;
 }
 
-#portfolio a:hover .portfolio-intro{
+#portfolio a:hover .portfolio-intro {
     opacity: 1;
     transition: all 0.4s ease-in-out;
 }
 
-.portfolio-info{
+.portfolio-info {
     margin: 5% 0 0 5%;
 }
 
+#footer i {
+    margin: 20px 20px;
+    color: rgb(153, 153, 153);
+}
+
 /*different style for different screen sizes*/
-@media (min-width: 575.98px) {
+@media screen and (min-width: 575.98px) {
     .fixed-top button {
         visibility: collapse;
         position: absolute;
@@ -180,24 +186,24 @@ small{
     }
 }
 
-@media (min-width: 575.98px) and (max-width: 768px){
-    .sidebar li a{
+@media screen and (min-width: 575.98px) and (max-width: 768px) {
+    .sidebar li a {
         font-size: 13px;
         padding: 5px 3px;
     }
 
-    .sidebar li{
+    .sidebar li {
         margin-left: 5px;
     }
 }
 
-@media (min-width: 768px ) {
-    #info h1, #info h2{
+@media screen and (min-width: 768px ) {
+    #info h1, #info h2 {
         font-size: 0;
         margin: 0;
     }
 
-    #info h3{
+    #info h3 {
         color: rgb(100, 100, 100);
         font-size: 30px;
         text-align: center;
@@ -205,57 +211,57 @@ small{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
     .navbar-brand img {
         width: 50%;
         height: auto;
     }
 
-    #info h3{
+    #info h3 {
         color: rgb(100, 100, 100);
         font-size: 22px;
         text-align: center;
         margin: 40px 0 60px;
     }
 
-    .sidebar li a{
+    .sidebar li a {
         font-size: 17px;
         padding: 10px;
         margin-left: 10px;
     }
 
-    .sidebar{
+    .sidebar {
         margin-top: 110px;
     }
 }
 
-@media (min-width: 1199.98px) {
-    section{
+@media screen and (min-width: 1199.98px) {
+    section {
         margin: 30px 0;
     }
 
-    .navbar-brand img{
+    .navbar-brand img {
         width: 60%;
         height: auto;
     }
 
-    .banner li a{
+    .banner li a {
         font-size: 25px;
     }
 
-    .sidebar li a{
+    .sidebar li a {
         font-size: 21px;
         padding: 10px 10px 10px 10px;
     }
 
-    .sidebar li{
+    .sidebar li {
         margin-left: 20px;
     }
 
 }
 
-@media (max-width: 575.98px) {
-    .fixed-top button{
+@media screen and (max-width: 575.98px) {
+    .fixed-top button {
         position: absolute;
         right: 10px;
         top: 10px;
@@ -264,40 +270,46 @@ small{
 
     }
 
-    .icon-bar{
+    .icon-bar {
         padding: 5px;
         background: #bdc3c7;
         border-color: transparent;
     }
 
-    .banner li a{
+    .banner li a {
         padding: 0;
         display: block;
     }
 
-    .banner li{
+    .banner li {
         position: relative;
         right: 20px;
     }
 
-    #navbarNav .navbar-nav{
+    #navbarNav .navbar-nav {
         text-align: center;
         position: relative;
         right: 8px;
     }
 
-    button img{
+    button img {
         width: 100%;
         height: 100%;
     }
 
-    button i{
+    button i {
         color: rgb(153, 153, 153);
     }
 
-    .sidebar{
+    .sidebar {
         visibility: collapse;
     }
+}
+
+iframe {
+    width: 900px;
+    height: 800px;
+    border: honeydew;
 }
 
 .img-wrap{
@@ -319,12 +331,31 @@ small{
     width: 100%;
 }
 
-.img-content h1{
-    background: url("../img/background.jpg") no-repeat;
+@media screen and (max-width: 575.98px) and (orientation:portrait)  {
+    .img-offset{
+        flex: 0.5;
+    }
+
+    .img-wrap p{
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        font-family: "Courier New", Courier, monospace;
+    }
 }
 
-iframe{
-    width: 900px;
-    height: 800px;
-    border: honeydew;
+@media screen and (min-width: 575.98px) {
+    .img-wrap p{
+        font-size: 3vw;
+        font-weight: 500;
+        line-height: 1.2;
+        font-family: "Courier New", Courier, monospace;
+        margin-top: 20px;
+    }
+}
+
+@media all and (orientation:landscape) {
+    /* Style adjustments for landscape mode goes here */
+    .img-offset{
+        flex: 0.75;
+    }
 }
