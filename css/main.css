@@ -315,6 +315,7 @@ iframe {
 .img-wrap{
     display: flex;
     flex-flow: row;
+    margin-top: 30px;
 }
 
 .img-offset{
@@ -364,7 +365,7 @@ iframe {
     }
 }
 
-@media screen and (min-width: 575.98px) and (max-width: 1199.98) {
+@media screen and (min-width: 575.98px) and (max-width: 1199.98px) {
     .img-wrap p{
         font-size: 3vw;
         font-weight: 500;
