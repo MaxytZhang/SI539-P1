@@ -353,7 +353,11 @@ iframe {
         writing-mode: vertical-rl;
         text-orientation: upright;
         font-family: "Courier New", Courier, monospace;
+        background-color: black;
+        color: white;
+        padding: 1vw;
     }
+
 
     .img-offset-2{
         flex: 0;
@@ -373,9 +377,15 @@ iframe {
 @media all and (orientation:landscape) {
     /* Style adjustments for landscape mode goes here */
     .img-offset{
-        flex: 0.75;
+        flex: 0.5;
+    }
+    .img-content{
+        flex: 2;
     }
     .img-offset-2{
-        flex: 0.25;
+        flex: 0.5;
+    }
+    .img-wrap p{
+        font-size: 20px;
     }
 }
