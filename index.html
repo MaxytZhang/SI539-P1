@@ -11,9 +11,19 @@
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
     <link rel="stylesheet" href="css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
+    <script src="js/down.js"></script>
 </head>
 <body>
+<hearder>
+<a class="skip-main" href="#main">Skip to main content</a>
+</hearder>
+<section class="preloader">
+    <i class="fa-5x fas fa-circle-notch fa-spin"></i>
+</section>
+<nav>
 <div class="fixed-top navbar navbar-expand-xl navbar-expand-md navbar-expand-lg navbar-expand-sm">
     <div class="container banner">
         <a class="navbar-brand" href="index.html">
@@ -26,7 +36,7 @@
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav justify-content-end">
-                <li><a href="index.html">Work</a></li>
+                <li class="selected"><a href="index.html">Work</a></li>
                 <li><a href="html/about.html">About</a></li>
                 <li><a href="html/resume.html">Resume</a></li>
                 <li><a href="html/more.html">More</a></li>
@@ -42,22 +52,24 @@
         <h3>Capture sparkles in life & Create moments of joy</h3>
     </div>
 </section>
-
+</nav>
 <section id="down">
 <div class="container">
     <div class="row justify-content-center">
         <i class="fas fa-chevron-down fa-4x"></i>
+        <!--<img src="img/home-arr-down_white.svg" alt="down-arrow">-->
     </div>
 </div>
 </section>
-
+<main id="main">
 <section id="portfolio">
     <div class="container">
         <div class="row">
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <a href="html/easymana.html">
                     <div class="portfolio-item">
-                        <img class="img-fluid rounded" src="img/easymana.png" alt="easymana">
+                        <!--<img class="img-fluid rounded" src="img/easymana.png" alt="easymana">-->
+                        <img class="img-fluid rounded" src="img/construction.png" alt="underconstruction">
                         <div class="portfolio-intro">
                             <div class="portfolio-info">
                                 <h2>EASYMANA</h2>
@@ -71,7 +83,8 @@
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <a href="">
                     <div class="portfolio-item">
-                        <img class="img-fluid rounded" src="img/musicbox.jpeg" alt="musicbox">
+                        <!--<img class="img-fluid rounded" src="img/musicbox.jpeg" alt="musicbox">-->
+                        <img class="img-fluid rounded" src="img/construction.png" alt="underconstruction">
                         <div class="portfolio-intro">
                             <div class="portfolio-info rounded">
                                 <h2>MUSICBOX</h2>
@@ -84,7 +97,8 @@
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <a href="">
                     <div class="portfolio-item">
-                        <img class="img-fluid rounded" src="img/illustration.jpeg" alt="illustration">
+                        <!--<img class="img-fluid rounded" src="img/illustration.jpeg" alt="illustration">-->
+                        <img class="img-fluid rounded" src="img/construction.png" alt="underconstruction">
                         <div class="portfolio-intro">
                             <div class="portfolio-info">
                                 <h2>EASYMANA</h2>
@@ -97,7 +111,8 @@
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <a href="">
                     <div class="portfolio-item">
-                        <img class="img-fluid rounded" src="img/photography.jpg" alt="photography">
+                        <!--<img class="img-fluid rounded" src="img/photography.jpg" alt="photography">-->
+                        <img class="img-fluid rounded" src="img/construction.png" alt="underconstruction">
                         <div class="portfolio-intro">
                             <div class="portfolio-info">
                                 <h2>EASYMANA</h2>
@@ -110,7 +125,8 @@
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <a href="">
                     <div class="portfolio-item">
-                        <img class="img-fluid" src="img/easymana.png" alt="easymana">
+                        <!--<img class="img-fluid" src="img/easymana.png" alt="easymana">-->
+                        <img class="img-fluid rounded" src="img/construction.png" alt="underconstruction">
                         <div class="portfolio-intro">
                             <div class="portfolio-info">
                                 <h2>EASYMANA</h2>
@@ -124,7 +140,8 @@
             <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-xs-12">
                 <a href="">
                     <div class="portfolio-item">
-                        <img class="img-fluid" src="img/musicbox.jpeg" alt="musicbox">
+                        <!--<img class="img-fluid" src="img/musicbox.jpeg" alt="musicbox">-->
+                        <img class="img-fluid rounded" src="img/construction.png" alt="underconstruction">
                         <div class="portfolio-intro">
                             <div class="portfolio-info">
                                 <h2>MUSICBOX</h2>
@@ -137,6 +154,8 @@
         </div>
     </div>
 </section>
+</main>
+<footer>
 <section id="footer">
     <div class="container">
         <div class="row justify-content-center">
@@ -150,13 +169,12 @@
         </div>
     </div>
 </section>
+</footer>
 
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

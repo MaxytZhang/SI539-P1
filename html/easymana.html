@@ -10,15 +10,25 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
     <script src="../js/main.js"></script>
 </head>
 <body>
+<hearder>
+    <a class="skip-main" href="#main">Skip to main content</a>
+</hearder>
+<section class="preloader">
+    <i class="fa-5x fas fa-circle-notch fa-spin"></i>
+</section>
+<nav>
+<!--<div class="offset-sm-3 col-sm-9 offset-md-3 col-md-9 offset-lg-3 col-lg-9">-->
 <div class="fixed-top navbar navbar-expand-xl navbar-expand-md navbar-expand-lg navbar-expand-sm">
     <div class="container banner">
         <a class="navbar-brand" href="../index.html">
             <img src="../img/logo-husky-gray.png" alt="logo">
         </a>
-        <button class="navbar-toggle justify-content-end" data-toggle="collapse" data-target="#navbarNav">
+        <button class="navbar-toggle justify-content-end" data-toggle="collapse" data-target="#navbarNav" aria-label="collapse">
             <!--<img class="img-fluid" src="img/align-justify-solid.png" alt="">-->
             <i class="fas fa-align-justify fa-2x"></i>
         </button>
@@ -32,27 +42,29 @@
         </div>
     </div>
 </div>
+<!--</div>-->
 <div class="row nav-row"></div>
-
+</nav>
+<aside>
 <div class="fixed-top sidebar">
     <div class="container ">
-        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
+        <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2 col-xl-2">
             <ul class="navbar-nav">
                 <li><a href="#Intro">Intro</a></li>
                 <li><a href="#Frame">Frame</a></li>
-                <li><a href="#Ideation">Ideation</a></li>
+                <li><a href="#Ideation">Ideate</a></li>
                 <li><a href="#Prototype">Prototype</a></li>
-                <li><a href="#Final Design">FinalDesign</a></li>
-                <li><a href="#Reflection">Reflection</a></li>
+                <li><a href="#Final Design">Design</a></li>
+                <li><a href="#Reflection">Reflect</a></li>
             </ul>
         </div>
     </div>
 </div>
-
-
+</aside>
+<main id="main">
 <section id="Intro">
     <div class="container">
-        <div class="offset-sm-3 col-sm-9 offset-md-3 col-md-9 offset-lg-3 col-lg-9">
+        <div class="offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10">
             <h1>Info</h1>
             <img class="img-fluid" src="../img/portait.jpeg" alt="">
         </div>
@@ -61,7 +73,7 @@
 
 <section id="Frame">
     <div class="container">
-        <div class="offset-sm-3 col-sm-9 offset-md-3 col-md-9 offset-lg-3 col-lg-9">
+        <div class="offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10">
             <h1>Info</h1>
             <img class="img-fluid" src="../img/portait.jpeg" alt="">
         </div>
@@ -70,7 +82,7 @@
 
 <section id="Ideation">
     <div class="container">
-        <div class="offset-sm-3 col-sm-9 offset-md-3 col-md-9 offset-lg-3 col-lg-9">
+        <div class="offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10">
             <h1>Info</h1>
             <img class="img-fluid" src="../img/portait.jpeg" alt="">
         </div>
@@ -79,7 +91,7 @@
 
 <section id="Prototype">
     <div class="container">
-        <div class="offset-sm-3 col-sm-9 offset-md-3 col-md-9 offset-lg-3 col-lg-9">
+        <div class="offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10">
             <h1>Info</h1>
             <img class="img-fluid" src="../img/portait.jpeg" alt="">
         </div>
@@ -88,7 +100,7 @@
 
 <section id="Final Design">
     <div class="container">
-        <div class="offset-sm-3 col-sm-9 offset-md-3 col-md-9 offset-lg-3 col-lg-9">
+        <div class="offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10">
             <h1>Info</h1>
             <img class="img-fluid" src="../img/portait.jpeg" alt="">
         </div>
@@ -97,13 +109,14 @@
 
 <section id="Reflection">
     <div class="container">
-        <div class="offset-sm-3 col-sm-9 offset-md-3 col-md-9 offset-lg-3 col-lg-9">
+        <div class="offset-sm-2 col-sm-10 offset-md-2 col-md-10 offset-lg-2 col-lg-10">
             <h1>Info</h1>
             <img class="img-fluid" src="../img/portait.jpeg" alt="">
         </div>
     </div>
 </section>
-
+</main>
+<footer>
 <section id="footer">
     <div class="container">
         <div class="row justify-content-center">
@@ -117,13 +130,10 @@
         </div>
     </div>
 </section>
-
+</footer>
 
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>

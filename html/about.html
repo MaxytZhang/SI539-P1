@@ -10,8 +10,18 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
           integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+    <script src="../js/main.js"></script>
 </head>
 <body>
+<hearder>
+    <a class="skip-main" href="#main">Skip to main content</a>
+</hearder>
+<section class="preloader">
+    <i class="fa-5x fas fa-circle-notch fa-spin"></i>
+</section>
+<nav>
 <div class="fixed-top navbar navbar-expand-xl navbar-expand-md navbar-expand-lg navbar-expand-sm">
     <div class="container banner">
         <a class="navbar-brand" href="../index.html">
@@ -24,7 +34,7 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
             <ul class="navbar-nav justify-content-end">
                 <li><a href="../index.html">Work</a></li>
-                <li><a href="../html/about.html">About</a></li>
+                <li class="selected"><a href="../html/about.html">About</a></li>
                 <li><a href="../html/resume.html">Resume</a></li>
                 <li><a href="../html/more.html">More</a></li>
             </ul>
@@ -32,7 +42,8 @@
     </div>
 </div>
 <div class="row nav-row"></div>
-
+</nav>
+<aside>
 <div class="fixed-top sidebar">
     <div class="container ">
         <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xl-3">
@@ -44,8 +55,8 @@
         </div>
     </div>
 </div>
-
-
+</aside>
+<main id="main">
 <section id="About-me">
     <div class="container">
         <div class="offset-sm-3 col-sm-9 offset-md-3 col-md-9 offset-lg-3 col-lg-9">
@@ -72,7 +83,8 @@
         </div>
     </div>
 </section>
-
+</main>
+<footer>
 <section id="footer">
     <div class="container">
         <div class="row justify-content-center">
@@ -86,12 +98,9 @@
         </div>
     </div>
 </section>
-
+</footer>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
