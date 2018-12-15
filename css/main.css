@@ -205,7 +205,7 @@ h1, h2, h3, h4, small, strong {
 }
 
 /*different style for different screen sizes*/
-@media screen and (min-width: 575.98px) {
+@media screen and (min-width: 576px) {
     .fixed-top button {
         visibility: collapse;
         position: absolute;
@@ -213,7 +213,7 @@ h1, h2, h3, h4, small, strong {
     }
 }
 
-@media screen and (min-width: 575.98px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     .sidebar li a {
         font-size: 13px;
         padding: 5px 3px;
@@ -238,7 +238,7 @@ h1, h2, h3, h4, small, strong {
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+@media screen and (min-width: 768px) and (max-width: 1200px) {
     .navbar-brand img {
         width: 50%;
         height: auto;
@@ -262,7 +262,7 @@ h1, h2, h3, h4, small, strong {
     }
 }
 
-@media screen and (min-width: 1199.98px) {
+@media screen and (min-width: 1200px) {
     section {
         margin: 30px 0;
     }
@@ -287,7 +287,7 @@ h1, h2, h3, h4, small, strong {
 
 }
 
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 576px) {
 
     .banner {
         background-color: rgba(255,255,255,0.8);
@@ -488,3 +488,6 @@ a.skip-main:focus, a.skip-main:active {
     color: black;
 }
 
+p{
+    color: black;
+}
